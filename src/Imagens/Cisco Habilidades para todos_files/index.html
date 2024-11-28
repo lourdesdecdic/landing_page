@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<!-- saved from url=(0231)https://www.netacad.com/content/jse1/1.0/index.html?xAPILaunchKey=264c93a9-8ef9-4abc-872a-a48f47a5a750&xAPILaunchService=https://www.netacad.com/adl/content/&lang=en-US&moduleNumber=1#/courses/content/m1/id/631b00c4c3803267d02d5491 -->
+<html lang="en-US" class="no-touchevents csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox flexboxlegacy cssreflections fullscreen chrome version-129.0.0.0 OS-windows version-129-0.0.0 os-windows pixel-density-low size-large orientation-landscape location-page location-id-631b00c4c3803267d02d5491 article-base-theme no-lang-picker hide__nav-bar dir-ltr light" data-location="page-631b00c4c3803267d02d5491" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>    .error_widget_wrapper {        background: inherit;        color: inherit;        border:none    }    .error_widget {        border-top: solid 2px;        border-bottom: solid 2px;        margin: 5px 0;        padding: 10px 40px;        white-space: pre-wrap;    }    .error_widget.ace_error, .error_widget_arrow.ace_error{        border-color: #ff5a5a    }    .error_widget.ace_warning, .error_widget_arrow.ace_warning{        border-color: #F1D817    }    .error_widget.ace_info, .error_widget_arrow.ace_info{        border-color: #5a5a5a    }    .error_widget.ace_ok, .error_widget_arrow.ace_ok{        border-color: #5aaa5a    }    .error_widget_arrow {        position: absolute;        border: solid 5px;        border-top-color: transparent!important;        border-right-color: transparent!important;        border-left-color: transparent!important;        top: -5px;    }</style><style id="ace-tm">.ace-tm .ace_gutter {background: #f0f0f0;color: #333;}.ace-tm .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-tm .ace_fold {background-color: #6B72E6;}.ace-tm {background-color: #FFFFFF;color: black;}.ace-tm .ace_cursor {color: black;}.ace-tm .ace_invisible {color: rgb(191, 191, 191);}.ace-tm .ace_storage,.ace-tm .ace_keyword {color: blue;}.ace-tm .ace_constant {color: rgb(197, 6, 11);}.ace-tm .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-tm .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-tm .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-tm .ace_invalid {background-color: rgba(255, 0, 0, 0.1);color: red;}.ace-tm .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-tm .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-tm .ace_support.ace_type,.ace-tm .ace_support.ace_class {color: rgb(109, 121, 222);}.ace-tm .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-tm .ace_string {color: rgb(3, 106, 7);}.ace-tm .ace_comment {color: rgb(76, 136, 107);}.ace-tm .ace_comment.ace_doc {color: rgb(0, 102, 255);}.ace-tm .ace_comment.ace_doc.ace_tag {color: rgb(128, 159, 191);}.ace-tm .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-tm .ace_variable {color: rgb(49, 132, 149);}.ace-tm .ace_xml-pe {color: rgb(104, 104, 91);}.ace-tm .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-tm .ace_heading {color: rgb(12, 7, 255);}.ace-tm .ace_list {color:rgb(185, 6, 144);}.ace-tm .ace_meta.ace_tag {color:rgb(0, 22, 142);}.ace-tm .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-tm .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-tm.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px white;}.ace-tm .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-tm .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-tm .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-tm .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-tm .ace_gutter-active-line {background-color : #dcdcdc;}.ace-tm .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-tm .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}
+/*# sourceURL=ace/css/ace-tm */</style><style id="ace_editor.css">.ace_br1 {border-top-left-radius    : 3px;}.ace_br2 {border-top-right-radius   : 3px;}.ace_br3 {border-top-left-radius    : 3px; border-top-right-radius:    3px;}.ace_br4 {border-bottom-right-radius: 3px;}.ace_br5 {border-top-left-radius    : 3px; border-bottom-right-radius: 3px;}.ace_br6 {border-top-right-radius   : 3px; border-bottom-right-radius: 3px;}.ace_br7 {border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px;}.ace_br8 {border-bottom-left-radius : 3px;}.ace_br9 {border-top-left-radius    : 3px; border-bottom-left-radius:  3px;}.ace_br10{border-top-right-radius   : 3px; border-bottom-left-radius:  3px;}.ace_br11{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-left-radius:  3px;}.ace_br12{border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br13{border-top-left-radius    : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br14{border-top-right-radius   : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br15{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;}.ace_editor {position: relative;overflow: hidden;font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;direction: ltr;text-align: left;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}.ace_scroller {position: absolute;overflow: hidden;top: 0;bottom: 0;background-color: inherit;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;cursor: text;}.ace_content {position: absolute;box-sizing: border-box;min-width: 100%;contain: style size layout;}.ace_dragging .ace_scroller:before{position: absolute;top: 0;left: 0;right: 0;bottom: 0;content: '';background: rgba(250, 250, 250, 0.01);z-index: 1000;}.ace_dragging.ace_dark .ace_scroller:before{background: rgba(0, 0, 0, 0.01);}.ace_selecting, .ace_selecting * {cursor: text !important;}.ace_gutter {position: absolute;overflow : hidden;width: auto;top: 0;bottom: 0;left: 0;cursor: default;z-index: 4;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;contain: style size layout;}.ace_gutter-active-line {position: absolute;left: 0;right: 0;}.ace_scroller.ace_scroll-left {box-shadow: 17px 0 16px -16px rgba(0, 0, 0, 0.4) inset;}.ace_gutter-cell {position: absolute;top: 0;left: 0;right: 0;padding-left: 19px;padding-right: 6px;background-repeat: no-repeat;}.ace_gutter-cell.ace_error {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABOFBMVEX/////////QRswFAb/Ui4wFAYwFAYwFAaWGAfDRymzOSH/PxswFAb/SiUwFAYwFAbUPRvjQiDllog5HhHdRybsTi3/Tyv9Tir+Syj/UC3////XurebMBIwFAb/RSHbPx/gUzfdwL3kzMivKBAwFAbbvbnhPx66NhowFAYwFAaZJg8wFAaxKBDZurf/RB6mMxb/SCMwFAYwFAbxQB3+RB4wFAb/Qhy4Oh+4QifbNRcwFAYwFAYwFAb/QRzdNhgwFAYwFAbav7v/Uy7oaE68MBK5LxLewr/r2NXewLswFAaxJw4wFAbkPRy2PyYwFAaxKhLm1tMwFAazPiQwFAaUGAb/QBrfOx3bvrv/VC/maE4wFAbRPBq6MRO8Qynew8Dp2tjfwb0wFAbx6eju5+by6uns4uH9/f36+vr/GkHjAAAAYnRSTlMAGt+64rnWu/bo8eAA4InH3+DwoN7j4eLi4xP99Nfg4+b+/u9B/eDs1MD1mO7+4PHg2MXa347g7vDizMLN4eG+Pv7i5evs/v79yu7S3/DV7/498Yv24eH+4ufQ3Ozu/v7+y13sRqwAAADLSURBVHjaZc/XDsFgGIBhtDrshlitmk2IrbHFqL2pvXf/+78DPokj7+Fz9qpU/9UXJIlhmPaTaQ6QPaz0mm+5gwkgovcV6GZzd5JtCQwgsxoHOvJO15kleRLAnMgHFIESUEPmawB9ngmelTtipwwfASilxOLyiV5UVUyVAfbG0cCPHig+GBkzAENHS0AstVF6bacZIOzgLmxsHbt2OecNgJC83JERmePUYq8ARGkJx6XtFsdddBQgZE2nPR6CICZhawjA4Fb/chv+399kfR+MMMDGOQAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: 2px center;}.ace_gutter-cell.ace_warning {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAmVBMVEX///8AAAD///8AAAAAAABPSzb/5sAAAAB/blH/73z/ulkAAAAAAAD85pkAAAAAAAACAgP/vGz/rkDerGbGrV7/pkQICAf////e0IsAAAD/oED/qTvhrnUAAAD/yHD/njcAAADuv2r/nz//oTj/p064oGf/zHAAAAA9Nir/tFIAAAD/tlTiuWf/tkIAAACynXEAAAAAAAAtIRW7zBpBAAAAM3RSTlMAABR1m7RXO8Ln31Z36zT+neXe5OzooRDfn+TZ4p3h2hTf4t3k3ucyrN1K5+Xaks52Sfs9CXgrAAAAjklEQVR42o3PbQ+CIBQFYEwboPhSYgoYunIqqLn6/z8uYdH8Vmdnu9vz4WwXgN/xTPRD2+sgOcZjsge/whXZgUaYYvT8QnuJaUrjrHUQreGczuEafQCO/SJTufTbroWsPgsllVhq3wJEk2jUSzX3CUEDJC84707djRc5MTAQxoLgupWRwW6UB5fS++NV8AbOZgnsC7BpEAAAAABJRU5ErkJggg==");background-position: 2px center;}.ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAJ0Uk5TAAB2k804AAAAPklEQVQY02NgIB68QuO3tiLznjAwpKTgNyDbMegwisCHZUETUZV0ZqOquBpXj2rtnpSJT1AEnnRmL2OgGgAAIKkRQap2htgAAAAASUVORK5CYII=");background-position: 2px center;}.ace_dark .ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAChoaGAgIAqKiq+vr6tra1ZWVmUlJSbm5s8PDxubm56enrdgzg3AAAAAXRSTlMAQObYZgAAAClJREFUeNpjYMAPdsMYHegyJZFQBlsUlMFVCWUYKkAZMxZAGdxlDMQBAG+TBP4B6RyJAAAAAElFTkSuQmCC");}.ace_scrollbar {contain: strict;position: absolute;right: 0;bottom: 0;z-index: 6;}.ace_scrollbar-inner {position: absolute;cursor: text;left: 0;top: 0;}.ace_scrollbar-v{overflow-x: hidden;overflow-y: scroll;top: 0;}.ace_scrollbar-h {overflow-x: scroll;overflow-y: hidden;left: 0;}.ace_print-margin {position: absolute;height: 100%;}.ace_text-input {position: absolute;z-index: 0;width: 0.5em;height: 1em;opacity: 0;background: transparent;-moz-appearance: none;appearance: none;border: none;resize: none;outline: none;overflow: hidden;font: inherit;padding: 0 1px;margin: 0 -1px;contain: strict;-ms-user-select: text;-moz-user-select: text;-webkit-user-select: text;user-select: text;white-space: pre!important;}.ace_text-input.ace_composition {background: transparent;color: inherit;z-index: 1000;opacity: 1;}.ace_composition_placeholder { color: transparent }.ace_composition_marker { border-bottom: 1px solid;position: absolute;border-radius: 0;margin-top: 1px;}[ace_nocontext=true] {transform: none!important;filter: none!important;perspective: none!important;clip-path: none!important;mask : none!important;contain: none!important;perspective: none!important;mix-blend-mode: initial!important;z-index: auto;}.ace_layer {z-index: 1;position: absolute;overflow: hidden;word-wrap: normal;white-space: pre;height: 100%;width: 100%;box-sizing: border-box;pointer-events: none;}.ace_gutter-layer {position: relative;width: auto;text-align: right;pointer-events: auto;height: 1000000px;contain: style size layout;}.ace_text-layer {font: inherit !important;position: absolute;height: 1000000px;width: 1000000px;contain: style size layout;}.ace_text-layer > .ace_line, .ace_text-layer > .ace_line_group {contain: style size layout;position: absolute;top: 0;left: 0;right: 0;}.ace_hidpi .ace_text-layer,.ace_hidpi .ace_gutter-layer,.ace_hidpi .ace_content,.ace_hidpi .ace_gutter {contain: strict;will-change: transform;}.ace_hidpi .ace_text-layer > .ace_line, .ace_hidpi .ace_text-layer > .ace_line_group {contain: strict;}.ace_cjk {display: inline-block;text-align: center;}.ace_cursor-layer {z-index: 4;}.ace_cursor {z-index: 4;position: absolute;box-sizing: border-box;border-left: 2px solid;transform: translatez(0);}.ace_multiselect .ace_cursor {border-left-width: 1px;}.ace_slim-cursors .ace_cursor {border-left-width: 1px;}.ace_overwrite-cursors .ace_cursor {border-left-width: 0;border-bottom: 1px solid;}.ace_hidden-cursors .ace_cursor {opacity: 0.2;}.ace_smooth-blinking .ace_cursor {transition: opacity 0.18s;}.ace_animate-blinking .ace_cursor {animation-duration: 1000ms;animation-timing-function: step-end;animation-name: blink-ace-animate;animation-iteration-count: infinite;}.ace_animate-blinking.ace_smooth-blinking .ace_cursor {animation-duration: 1000ms;animation-timing-function: ease-in-out;animation-name: blink-ace-animate-smooth;}@keyframes blink-ace-animate {from, to { opacity: 1; }60% { opacity: 0; }}@keyframes blink-ace-animate-smooth {from, to { opacity: 1; }45% { opacity: 1; }60% { opacity: 0; }85% { opacity: 0; }}.ace_marker-layer .ace_step, .ace_marker-layer .ace_stack {position: absolute;z-index: 3;}.ace_marker-layer .ace_selection {position: absolute;z-index: 5;}.ace_marker-layer .ace_bracket {position: absolute;z-index: 6;}.ace_marker-layer .ace_active-line {position: absolute;z-index: 2;}.ace_marker-layer .ace_selected-word {position: absolute;z-index: 4;box-sizing: border-box;}.ace_line .ace_fold {box-sizing: border-box;display: inline-block;height: 11px;margin-top: -2px;vertical-align: middle;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi+P//fxgTAwPDBxDxD078RSX+YeEyDFMCIMAAI3INmXiwf2YAAAAASUVORK5CYII=");background-repeat: no-repeat, repeat-x;background-position: center center, top left;color: transparent;border: 1px solid black;border-radius: 2px;cursor: pointer;pointer-events: auto;}.ace_dark .ace_fold {}.ace_fold:hover{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACBJREFUeNpi+P//fz4TAwPDZxDxD5X4i5fLMEwJgAADAEPVDbjNw87ZAAAAAElFTkSuQmCC");}.ace_tooltip {background-color: #FFF;background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));border: 1px solid gray;border-radius: 1px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);color: black;max-width: 100%;padding: 3px 4px;position: fixed;z-index: 999999;box-sizing: border-box;cursor: default;white-space: pre;word-wrap: break-word;line-height: normal;font-style: normal;font-weight: normal;letter-spacing: normal;pointer-events: none;}.ace_folding-enabled > .ace_gutter-cell {padding-right: 13px;}.ace_fold-widget {box-sizing: border-box;margin: 0 -12px 0 1px;display: none;width: 11px;vertical-align: top;background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42mWKsQ0AMAzC8ixLlrzQjzmBiEjp0A6WwBCSPgKAXoLkqSot7nN3yMwR7pZ32NzpKkVoDBUxKAAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: center;border-radius: 3px;border: 1px solid transparent;cursor: pointer;}.ace_folding-enabled .ace_fold-widget {display: inline-block;   }.ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42m3HwQkAMAhD0YzsRchFKI7sAikeWkrxwScEB0nh5e7KTPWimZki4tYfVbX+MNl4pyZXejUO1QAAAABJRU5ErkJggg==");}.ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAOUlEQVR42jXKwQkAMAgDwKwqKD4EwQ26sSOkVWjgIIHAzPiCgaqiqnJHZnKICBERHN194O5b9vbLuAVRL+l0YWnZAAAAAElFTkSuQmCCXA==");}.ace_fold-widget:hover {border: 1px solid rgba(0, 0, 0, 0.3);background-color: rgba(255, 255, 255, 0.2);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);}.ace_fold-widget:active {border: 1px solid rgba(0, 0, 0, 0.4);background-color: rgba(0, 0, 0, 0.05);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);}.ace_dark .ace_fold-widget {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQIW2P4//8/AzoGEQ7oGCaLLAhWiSwB146BAQCSTPYocqT0AAAAAElFTkSuQmCC");}.ace_dark .ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAH0lEQVQIW2P4//8/AxQ7wNjIAjDMgC4AxjCVKBirIAAF0kz2rlhxpAAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAYAAACAcVaiAAAAHElEQVQIW2P4//+/AxAzgDADlOOAznHAKgPWAwARji8UIDTfQQAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget:hover {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);background-color: rgba(255, 255, 255, 0.1);}.ace_dark .ace_fold-widget:active {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);}.ace_inline_button {border: 1px solid lightgray;display: inline-block;margin: -1px 8px;padding: 0 5px;pointer-events: auto;cursor: pointer;}.ace_inline_button:hover {border-color: gray;background: rgba(200,200,200,0.2);display: inline-block;pointer-events: auto;}.ace_fold-widget.ace_invalid {background-color: #FFB4B4;border-color: #DE5555;}.ace_fade-fold-widgets .ace_fold-widget {transition: opacity 0.4s ease 0.05s;opacity: 0;}.ace_fade-fold-widgets:hover .ace_fold-widget {transition: opacity 0.05s ease 0.05s;opacity:1;}.ace_underline {text-decoration: underline;}.ace_bold {font-weight: bold;}.ace_nobold .ace_bold {font-weight: normal;}.ace_italic {font-style: italic;}.ace_error-marker {background-color: rgba(255, 0, 0,0.2);position: absolute;z-index: 9;}.ace_highlight-marker {background-color: rgba(255, 255, 0,0.2);position: absolute;z-index: 8;}
+/*# sourceURL=ace/css/ace_editor.css */</style><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/x-icon" href="https://www.netacad.com/content/jse1/1.0/favicon.ico"><title>JSE: Module 1: Introduction to JavaScript and Computer Programming | 1.0. Welcome to JavaScript Essentials 1</title><!--<base href="./">--><base href="."><style>@font-face {
+            font-family: 'CiscoSansTT';
+            src:url('./fonts/ciscoSansTT-Thin.woff2') format('woff2'),
+                url('./fonts/ciscoSansTT-Thin.woff') format('woff'),
+                url('./fonts/ciscoSansTT-Thin.ttf') format('truetype'),
+                url('./fonts/ciscoSansTT-Thin.svg#CiscoSansTT-Thin') format('svg');
+            font-weight: 100;
+            font-style: normal;
+            font-display: swap;
+        }
+    
+        @font-face {
+            font-family: 'CiscoSansTT';
+            src: url('./fonts/ciscoSansTTLight.woff2') format('woff2'),
+                url('./fonts/ciscoSansTTLight.woff') format('woff'),
+                url('./fonts/ciscoSansTTLight.ttf') format('truetype'),
+                url('./fonts/ciscoSansTTLight.svg#CiscoSansTTLight') format('svg');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+    
+        @font-face {
+            font-family: 'CiscoSansTT';
+            src:url('./fonts/ciscoSansTT.woff2') format('woff2'),
+                url('./fonts/ciscoSansTT.woff') format('woff'),
+                url('./fonts/ciscoSansTT.ttf') format('truetype'),
+                url('./fonts/ciscoSansTT.svg#CiscoSansTT') format('svg');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+    
+        @font-face {
+            font-family: 'CiscoSansTT';
+            src:url('./fonts/ciscoSansTT-Bold.woff2') format('woff2'),
+                url('./fonts/ciscoSansTT-Bold.woff') format('woff'),
+                url('./fonts/ciscoSansTT-Bold.ttf') format('truetype'),
+                url('./fonts/ciscoSansTT-Bold.svg#CiscoSansTT-Bold') format('svg');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+    
+        html,
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+    
+        html {
+            box-sizing: border-box;
+        }
+    
+        html {
+            overflow-y: scroll;
+        }
+    
+        .dir-rtl body {
+            direction: rtl;
+        }
+    
+        html::-webkit-scrollbar {
+            width: 8px;
+            height: 4px;
+        }
+    
+        html::-webkit-scrollbar-track {
+            background: #fff;
+        }
+    
+        html::-webkit-scrollbar-thumb {
+            background: #dee2e6;
+            border-radius: 8px;
+            border: 1px solid #fff;
+        }
+    
+        html::-webkit-scrollbar-thumb:hover {
+            background: #a6a6a6;
+        }
+    
+        html.dark::-webkit-scrollbar-track {
+            background: #212529;
+        }
+    
+        html.dark::-webkit-scrollbar-thumb {
+            background: #6c757d;
+            border: 1px solid #212529;
+        }
+    
+        html.notify {
+            overflow: hidden;
+        }
+    
+        html.no-scroll {
+            overflow: hidden;
+        }</style><script defer="defer" src="./sgpulseecc3e26b6ce72e479fed.js.transferir"></script><style>@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(https://www.netacad.com/content/jse1/1.0/0c35d18bf06992036b69.woff2) format("woff2"), url(https://www.netacad.com/content/jse1/1.0/4d73cb90e394b34b7670.woff) format("woff");
+}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga";
+}
+
+@font-face {
+  font-family: "Material Icons Outlined";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(https://www.netacad.com/content/jse1/1.0/6f420cf17cc0d7676fad.woff2) format("woff2"), url(https://www.netacad.com/content/jse1/1.0/f882956fd323fd322f31.woff) format("woff");
+}
+.material-icons-outlined {
+  font-family: "Material Icons Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga";
+}
+
+@font-face {
+  font-family: "Material Icons Round";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(https://www.netacad.com/content/jse1/1.0/c380809fd3677d7d6903.woff2) format("woff2"), url(https://www.netacad.com/content/jse1/1.0/5d681e2edae8c60630db.woff) format("woff");
+}
+.material-icons-round {
+  font-family: "Material Icons Round";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga";
+}
+
+@font-face {
+  font-family: "Material Icons Sharp";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(https://www.netacad.com/content/jse1/1.0/219aa9140e099e6c72ed.woff2) format("woff2"), url(https://www.netacad.com/content/jse1/1.0/3a4004a46a653d4b2166.woff) format("woff");
+}
+.material-icons-sharp {
+  font-family: "Material Icons Sharp";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga";
+}
+
+@font-face {
+  font-family: "Material Icons Two Tone";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(https://www.netacad.com/content/jse1/1.0/4ef4218c522f1eb6b5b1.woff2) format("woff2"), url(https://www.netacad.com/content/jse1/1.0/3baa5b8f3469222b822d.woff) format("woff");
+}
+.material-icons-two-tone {
+  font-family: "Material Icons Two Tone";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga";
+}
+</style><script src="./xapiwrapper.min.js.transferir"></script><script src="./async.min.js.transferir"></script></head><body><app-root theme="light" device="large" is-touch="false" fullscreen="true" browser="Chrome" os="windows" dir="ltr" location="page" orientation="landscape" themetype="article-base-theme" style="--page-top-navbar-height: 0px;"><template shadowrootmode="open"><!---->
+      <sgpulse-loader is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+            <div class="loading__image-before-loader js-loading-before-loader remove-loader">
+                <div class="loading__wrapper">
+                    <div class="loading__logo"></div>
+                    <div class="course__title">
+                    <h2><!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">JSE: Módulo 1: Introdução ao JavaScript e à Programação de Computadores</font></font></h2>
+                    </div>
+                    <div class="course__sub-title">
+                    <h5></h5>
+                    <h5 id="course__title-sub-title"></h5>
+                    </div>
+                    <div class="loading__image">
+                        <img src="https://www.netacad.com/content/jse1/1.0/assets/ajax-loader.gif">
+                    </div>
+                </div>
+            </div>
+        </template></sgpulse-loader> 
+      <!--?lit$644827163$-->
+      <sgpulse-nav is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+            <div role="navigation" class="nav hide_nav_bar">
+                <div class="nav__inner u-clearfix">
+                    <button class="btn-text nav__btn  nav__skip-btn" tabindex="0" data-event="skipNavigation" aria-label="Pular navegação">
+                        <!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pular navegação</font></font>
+                    </button>
+                    <!--?lit$644827163$-->
+                        <div class="btn_icon btn_left">
+                            <tooltip-view position="right" text="Back" elementclass="nav__btn" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+        <div class="component__header-container">
+            <div class="tooltip-container tooltip tooltip-right nav__btn" data-text="Back">
+                <slot></slot>
+            </div>
+        </div>
+        </template>
+                                <button class="nav__btn nav__back-btn  js-nav-back-btn" data-event="backButton" aria-label="Voltar">
+                                    <material-icon icon="arrow_back" customclasses="" iconname="arrow_back" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <span part="material-icon" class="material-icons "><!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">seta_voltar</font></font></span>
+    </template></material-icon>
+                                </button>
+                            </tooltip-view>
+                        </div>
+                    
+                    <!--?lit$644827163$-->
+                    <!--?lit$644827163$--><!---->
+                        <!--?lit$644827163$--><search-button class="nav__inner-child" navigatonorder="2" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <!--?lit$644827163$-->
+        <tooltip-view position="right" text="Search" elementclass="nav_btn" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+        <div class="component__header-container">
+            <div class="tooltip-container tooltip tooltip-right nav_btn" data-text="Search">
+                <slot></slot>
+            </div>
+        </div>
+        </template>
+          <button class="nav_btn btn_icon btn_right">
+            <material-icon icon="search" customclasses="" iconname="search" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <span part="material-icon" class="material-icons "><!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">procurar</font></font></span>
+    </template></material-icon>
+          </button>
+        </tooltip-view>
+      
+    </template></search-button>
+                    <!----><!---->
+                        <!--?lit$644827163$--><theme-appearance class="nav__inner-child" navigatonorder="2" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+        <!--?lit$644827163$-->
+          <tooltip-view position="right" text="Theme Appearance" elementclass="nav_btn" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+        <div class="component__header-container">
+            <div class="tooltip-container tooltip tooltip-right nav_btn" data-text="Theme Appearance">
+                <slot></slot>
+            </div>
+        </div>
+        </template>
+            <div class="nav_btn btn_icon btn_right theme-appearance">
+              <label class="switch dayNight" role="button" tabindex="0" aria-label="Aparência do tema">
+                <input type="checkbox" class="toggleTheme">
+                <div></div>
+              </label>
+            </div>
+          </tooltip-view>
+        
+      </template></theme-appearance>
+                    <!----><!---->
+                        <!--?lit$644827163$--><sgpluse-close-view class="nav__inner-child u-display-none" navigatonorder="0" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <!--?lit$644827163$-->
+        <tooltip-view position="right" text="Exit Course" elementclass="nav_btn" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+        <div class="component__header-container">
+            <div class="tooltip-container tooltip tooltip-right nav_btn" data-text="Exit Course">
+                <slot></slot>
+            </div>
+        </div>
+        </template>
+          <button id="closeButton" class="nav_btn btn_icon btn_right nav__close-btn" data-event="closeButton" aria-label="Selecione aqui para fechar a janela.">
+            <material-icon icon="exit_to_app" class="" customclasses="" iconname="exit_to_app" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <span part="material-icon" class="material-icons "><!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">sair_para_aplicativo</font></font></span>
+    </template></material-icon>
+          </button>
+        </tooltip-view>
+      
+    </template></sgpluse-close-view>
+                    <!---->
+                <course-progress-view totalpercentage="20" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+   
+    <div class="course-progress" tabindex="0">
+    <tooltip-view position="right" text="Module Progress" elementclass="radial-progress" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+        <div class="component__header-container">
+            <div class="tooltip-container tooltip tooltip-right radial-progress" data-text="Module Progress">
+                <slot></slot>
+            </div>
+        </div>
+        </template>
+    <svg class="radial-progress courselevelprogress_percentage" viewBox="0 0 80 80" percentage-data="20">
+      <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+            <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset:175.92918860102841"></circle>
+      <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)"><!--?lit$644827163$-->1/<!--?lit$644827163$-->5</text>
+    </svg>
+    </tooltip-view>
+    </div>
+  
+    </template></course-progress-view><pagelevelprogress-indicator-view modelid="631b00c4c3803267d02d5491" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+    <div class="pagelevelprogress-container">
+      <tooltip-view position="right" style="display: block;width: 100%;" text="Page Level Progress: 100%" elementclass="nav__pagelevelprogress" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+        <div class="component__header-container">
+            <div class="tooltip-container tooltip tooltip-right nav__pagelevelprogress" data-text="Page Level Progress: 100%">
+                <slot></slot>
+            </div>
+        </div>
+        </template>
+        <button role="presentation" aria-hidden="true" class="nav__pagelevelprogress pagelevelprogress" aria-label="Page completion 100%">   
+              <div class="pagelevelprogress__indicator-inner">
+                <div class="pagelevelprogress__indicator-bar js-indicator-bar" style="width: 100%;"></div>
+              </div>
+              <div class="pagelevelprogress_percentage"><!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 </font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">%</font></font></div>
+        </button>
+      </tooltip-view>
+    </div></template></pagelevelprogress-indicator-view></div>
+            </div>
+        </template></sgpulse-nav>
+        <div id="Wrapper">
+        <span id="foucs_content" tabindex="0" aria-label="{{_moduleNumber}}.0. Bem-vindo ao JavaScript Essentials 1"></span>
+        <!--?lit$644827163$--><page-view modelid="631b00c4c3803267d02d5491" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="page"><template shadowrootmode="open"><!---->
+            <div role="main" data-socialgoodpulse-id="631b00c4c3803267d02d5491" aria-labelledby="631b00c4c3803267d02d5491-heading" class="page contentobject 631b00c4c3803267d02d5491 is-complete">
+            <div class="page-background-image page-background-image-631b00c4c3803267d02d5491" style="background-image: url(&quot;./courses/content/m1/en-US/assets/co-01.jpg&quot;);"></div>
+                <div class="page__inner">
+                    <base-view type="page" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="page__header-wrapper  ">
+        <div class="page__header ">
+              <div class="page__header-inner ">
+                  
+                    <!--?lit$644827163$--> <div class=" page__title ">
+                      <!--?lit$644827163$--><heading-view aria-hidden="true" id="631b00c4c3803267d02d5491-heading-view" headingtitle="1.0. Welcome to JavaScript Essentials 1" modelid="631b00c4c3803267d02d5491" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="js-heading is-complete">
+        <div class="js-heading-inner" role="heading" id="page-heading" aria-level="1">
+        <span class="aria-label"> <!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Incompleto </font></font>&nbsp;<!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1.0. Bem-vindo ao JavaScript Essentials 1</font></font></span>
+        </div>
+      </div>
+    </template></heading-view>
+                        <div tabindex="0" role="heading" class="page__title-inner " aria-level="">
+                        <span class="accessibility-completion-indicator"><!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Incompleto</font></font></span>
+                        <!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1.0. Bem-vindo ao JavaScript Essentials 1</font></font></div>
+                      </div>
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$--> <div class="page__content">
+                      <div tabindex="0" class="page__body ">
+                        <div class="page__body-inner "><!--?lit$644827163$--><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Este curso é </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">o primeiro de uma série de 2 cursos</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> que irão prepará-lo para os exames de certificação JSE – Certified Entry-Level JavaScript Programmer e JSA – Certified Associate JavaScript Programmer.</font></font></p></div>
+                      </div>
+                    </div>
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+                    <div class="article__container">
+                            <!--?lit$644827163$--><!---->
+                                <article-view modelid="3d937ef4b2574ffa9644076cb841283o" model="[object Object]" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="article"><template shadowrootmode="open"><!---->
+            <div class="article 3d937ef4b2574ffa9644076cb841283o page-heading is-complete ">
+                <div class="article__inner">
+                <div class=" no-adaptive-scroll">
+                    <!--?lit$644827163$-->
+                        <div class=""> 
+                            <base-view type="article" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="article__header-wrapper page-heading ">
+        <div class="article__header ">
+              <div class="article__header-inner ">
+                  
+                    <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+                            <div class="block__container " style="">
+                                <!--?lit$644827163$--><!---->
+                                    <block-view modelid="9fe36f199a314a289dbf45cedbb1283o" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="block" style="width: 50%;"><template shadowrootmode="open"><!---->
+                
+                <div data-socialgoodpulse-id="9fe36f199a314a289dbf45cedbb1283o" class="9fe36f199a314a289dbf45cedbb1283o block remove-padding-bottom is-complete">
+                    <div class="block__inner">    
+                    <base-view type="block" modelid="9fe36f199a314a289dbf45cedbb1283o" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="block__header-wrapper remove-padding-bottom ">
+        <div class="block__header ">
+              <div class="block__header-inner ">
+                  
+                    <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+                        <div class="component__container">                            
+                                <!--?lit$644827163$--><!----><text-view modelid="72ee132c03844f02a19edb595918vnge" class="is-left" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="component"><template shadowrootmode="open"><!---->
+        <div class="component__header-container">
+            <div data-socialgoodpulse-id="72ee132c03844f02a19edb595918vnge" class="component text 72ee132c03844f02a19edb595918vnge  is-left is-complete  ">
+                <base-view type="component" lowercase_component="text" model="[object Object]" customclass="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="component__header-wrapper  ">
+        <div class="component__header text__header">
+              <div class="component__header-inner text__header-inner">
+                  
+                    <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$--> <div class="component__content">
+                      <div tabindex="0" class="component__body text__body">
+                        <div class="component__body-inner text__body-inner"><!--?lit$644827163$--><h1><span><span style="color:#ffffff"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1.0 Bem-vindo ao JavaScript Essentials 1</font></font></span></span></span></h1></div>
+                      </div>
+                    </div>
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+            </div>
+        </div>
+
+        <!-- div><div class="component__inner"></div></div -->
+        </template></text-view><!---->
+                            </div>                     
+                    </div>
+                </div>
+            </template></block-view>
+                                <!----><!---->
+                                    <block-view modelid="9fe36f199a314a289dbf45cedbb1265t" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="block" style="width: 50%;"><template shadowrootmode="open"><!---->
+                
+                <div data-socialgoodpulse-id="9fe36f199a314a289dbf45cedbb1265t" class="9fe36f199a314a289dbf45cedbb1265t block  is-complete">
+                    <div class="block__inner">    
+                    <base-view type="block" modelid="9fe36f199a314a289dbf45cedbb1265t" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="block__header-wrapper  ">
+        <div class="block__header ">
+              <div class="block__header-inner ">
+                  
+                    <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+                        <div class="component__container">                            
+                                <!--?lit$644827163$--><!----><text-view modelid="85526e95e7e24913a6d8a4e8bcf7vneg" class="is-left background-colour1 remove-padding-top no-element-backgrounds" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="component"><template shadowrootmode="open"><!---->
+        <div class="component__header-container">
+            <div data-socialgoodpulse-id="85526e95e7e24913a6d8a4e8bcf7vneg" class="component text 85526e95e7e24913a6d8a4e8bcf7vneg background-colour1 remove-padding-top no-element-backgrounds is-left is-complete  animated pulse infinite">
+                <base-view type="component" lowercase_component="text" model="[object Object]" customclass="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="component__header-wrapper background-colour1 remove-padding-top no-element-backgrounds ">
+        <div class="component__header text__header">
+              <div class="component__header-inner text__header-inner">
+                  
+                    <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$--> <div class="component__content">
+                      <div tabindex="0" class="component__body text__body">
+                        <div class="component__body-inner text__body-inner"><!--?lit$644827163$--><p><span style="color:#ffffff"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Role para começar</font></font><i class="fa fa-arrow-circle-down"> </i></span></p></div>
+                      </div>
+                    </div>
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+            </div>
+        </div>
+
+        <!-- div><div class="component__inner"></div></div -->
+        </template></text-view><!---->
+                            </div>                     
+                    </div>
+                </div>
+            </template></block-view>
+                                <!---->
+                            </div>
+                        </div>
+                        <!--?lit$644827163$-->
+                    </div>
+                </div>
+            </div>
+        </template></article-view>
+                            <!----><!---->
+                                <article-view modelid="631b00c4c3803267d02d5498" model="[object Object]" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="article"><template shadowrootmode="open"><!---->
+            <div class="article 631b00c4c3803267d02d5498 background-color-gray is-complete ">
+                <div class="article__inner">
+                <div class=" no-adaptive-scroll">
+                    <!--?lit$644827163$-->
+                        <div class=""> 
+                            <base-view type="article" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="article__header-wrapper background-color-gray ">
+        <div class="article__header ">
+              <div class="article__header-inner ">
+                  
+                    <!--?lit$644827163$--> <div class=" article__title ">
+                      <!--?lit$644827163$--><heading-view aria-hidden="true" id="631b00c4c3803267d02d5498-heading-view" headingtitle="1.0.1 About the course" modelid="631b00c4c3803267d02d5498" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="js-heading is-complete">
+        <div class="js-heading-inner" role="heading" id="article-heading" aria-level="1">
+        <span class="aria-label"> <!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Incompleto </font></font>&nbsp;<!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1.0.1 Sobre o curso</font></font></span>
+        </div>
+      </div>
+    </template></heading-view>
+                        <div tabindex="0" role="heading" class="article__title-inner " aria-level="">
+                        <span class="accessibility-completion-indicator"><!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Incompleto</font></font></span>
+                        <!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1.0.1 Sobre o curso</font></font></div>
+                      </div>
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+                            <div class="block__container " style="">
+                                <!--?lit$644827163$--><!---->
+                                    <block-view modelid="631b00c5c3803267d02d54e8" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="block" style="width: 50%;"><template shadowrootmode="open"><!---->
+                
+                <div data-socialgoodpulse-id="631b00c5c3803267d02d54e8" class="631b00c5c3803267d02d54e8 block  is-complete">
+                    <div class="block__inner">    
+                    <base-view type="block" modelid="631b00c5c3803267d02d54e8" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="block__header-wrapper  ">
+        <div class="block__header ">
+              <div class="block__header-inner ">
+                  
+                    <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+                        <div class="component__container">                            
+                                <!--?lit$644827163$--><!----><graphic-view modelid="631b00c5c3803267d02d5549" class="is-right image-background-color python-image-padding" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="component"><template shadowrootmode="open"><!---->
+        <div data-socialgoodpulse-id="631b00c5c3803267d02d5549" class="component graphic 631b00c5c3803267d02d5549 image-background-color python-image-padding is-right is-complete  ">
+            <div class="component__header-container">
+                <base-view type="component" lowercase_component="graphic" model="[object Object]" customclass="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="component__header-wrapper image-background-color python-image-padding ">
+        <div class="component__header graphic__header">
+              <div class="component__header-inner graphic__header-inner">
+                  
+                    <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$--> <div class="component__content">
+                      <div tabindex="0" class="component__body graphic__body">
+                        <div class="component__body-inner graphic__body-inner"><!--?lit$644827163$--><a style="pointer-events:none"></a></div>
+                      </div>
+                    </div>
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+            </div>
+            <div class="component__widget">
+                <!--?lit$644827163$-->
+                    <div class="graphic__image-container  ">
+                        <img aria-hidden="false" tabindex="0" class="graphic__image js-graphic-set-image-src" src="https://www.netacad.com/content/jse1/1.0/courses/content/m1/en-US/assets/39b0352b05631da4efed317e3b6edc95906bdf3e.png" data-large="./courses/content/m1/en-US/assets/39b0352b05631da4efed317e3b6edc95906bdf3e.png" data-small="./courses/content/m1/en-US/assets/39b0352b05631da4efed317e3b6edc95906bdf3e.png" alt="">
+
+                        <!--?lit$644827163$-->
+
+                    </div>
+                
+            </div>
+        </div>
+        </template></graphic-view><!----><!----><text-view modelid="63c67a7227d45c05beeaa2a6" class="is-left" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="component"><template shadowrootmode="open"><!---->
+        <div class="component__header-container">
+            <div data-socialgoodpulse-id="63c67a7227d45c05beeaa2a6" class="component text 63c67a7227d45c05beeaa2a6  is-left is-complete  ">
+                <base-view type="component" lowercase_component="text" model="[object Object]" customclass="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="component__header-wrapper  ">
+        <div class="component__header text__header">
+              <div class="component__header-inner text__header-inner">
+                  
+                    <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$--> <div class="component__content">
+                      <div tabindex="0" class="component__body text__body">
+                        <div class="component__body-inner text__body-inner"><!--?lit$644827163$--><br><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Este curso foi projetado e desenvolvido pelo </font></font><a href="https://js.institute/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OpenEDG JS Institute</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> e implementado pela Cisco Networking Academy.</font></font></p></div>
+                      </div>
+                    </div>
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+            </div>
+        </div>
+
+        <!-- div><div class="component__inner"></div></div -->
+        </template></text-view><!---->
+                            </div>                     
+                    </div>
+                </div>
+            </template></block-view>
+                                <!----><!---->
+                                    <block-view modelid="631b00c5c3803267d02d54ed" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="block" style="width: 50%;"><template shadowrootmode="open"><!---->
+                
+                <div data-socialgoodpulse-id="631b00c5c3803267d02d54ed" class="631b00c5c3803267d02d54ed block remove-padding-top is-complete">
+                    <div class="block__inner">    
+                    <base-view type="block" modelid="631b00c5c3803267d02d54ed" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="block__header-wrapper remove-padding-top ">
+        <div class="block__header ">
+              <div class="block__header-inner ">
+                  
+                    <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+                        <div class="component__container">                            
+                                <!--?lit$644827163$--><!----><raw-html modelid="631b00c5c3803267d02d554a" class="is-full" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="component"><template shadowrootmode="open"><!---->
+            <div class=" rawhtml__inner component__inner">
+                <div data-socialgoodpulse-id="631b00c5c3803267d02d554a" class="component rawhtml 631b00c5c3803267d02d554a  is-full is-complete  ">
+                    <div data-socialgoodpulse-id="631b00c5c3803267d02d554a" class="component 631b00c5c3803267d02d554a">
+                        <base-view type="component" lowercase_component="rawHtml" model="[object Object]" customclass="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="component__header-wrapper  ">
+        <div class="component__header rawHtml__header">
+              <div class="component__header-inner rawHtml__header-inner">
+                  
+                    <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+                    <div class="component-widge" tabindex="0">
+                    <!--?lit$644827163$--><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Este curso é </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">o primeiro de uma série de 2 cursos</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> que irão prepará-lo para os exames de certificação </font></font><a href="https://js.institute/jse-certification" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">JSE – Certified Entry-Level JavaScript Programmer</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> e </font></font><a href="https://js.institute/jsa-certification" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">JSA – Certified Associate JavaScript Programmer</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> .</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O principal objetivo do curso é guiá-lo de um estado de completo analfabetismo em programação para um nível de conhecimento de programação que lhe permita </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">projetar, escrever, depurar e executar programas</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> codificados na linguagem JavaScript e entender os conceitos básicos da tecnologia de desenvolvimento de software.
+</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O curso se concentra nos </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">conceitos básicos</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> da linguagem JavaScript , incluindo os fundamentos da sintaxe e semântica do JavaScript, melhores práticas de programação, ferramentas e recursos de JS e conceitos de codificação, como variáveis, tipos de dados, conversão de tipos, operadores, interação do usuário, fluxo de controle, funções, erros, exceções, depuração e solução de problemas.
+</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O curso irá prepará-lo para empregos e carreiras relacionadas ao </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">desenvolvimento de software e web</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> amplamente compreendido , o que inclui não apenas a criação do código em si como desenvolvedor júnior, mas também </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">web design, desenvolvimento front-end</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> e </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">testes de aplicativos</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> .
+</font></font></p>
+                    </div>
+                    </div>
+                </div> 
+            </div></template></raw-html><!---->
+                            </div>                     
+                    </div>
+                </div>
+            </template></block-view>
+                                <!---->
+                            </div>
+                        </div>
+                        <!--?lit$644827163$-->
+                    </div>
+                </div>
+            </div>
+        </template></article-view>
+                            <!----><!---->
+                                <article-view modelid="631b00c4c3803267d02d12aa" model="[object Object]" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="article"><template shadowrootmode="open"><!---->
+            <div class="article 631b00c4c3803267d02d12aa background-color-white is-complete ">
+                <div class="article__inner">
+                <div class=" no-adaptive-scroll">
+                    <!--?lit$644827163$-->
+                        <div class=""> 
+                            <base-view type="article" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="article__header-wrapper background-color-white ">
+        <div class="article__header ">
+              <div class="article__header-inner ">
+                  
+                    <!--?lit$644827163$--> <div class=" article__title ">
+                      <!--?lit$644827163$--><heading-view aria-hidden="true" id="631b00c4c3803267d02d12aa-heading-view" headingtitle="1.0.2 Course Structure" modelid="631b00c4c3803267d02d12aa" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="js-heading is-complete">
+        <div class="js-heading-inner" role="heading" id="article-heading" aria-level="1">
+        <span class="aria-label"> <!--?lit$644827163$--><font style="vertical-align: inherit;"></font>&nbsp;<!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Estrutura do curso 1.0.2 </font><font style="vertical-align: inherit;">incompleto</font></font></span>
+        </div>
+      </div>
+    </template></heading-view>
+                        <div tabindex="0" role="heading" class="article__title-inner " aria-level="">
+                        <span class="accessibility-completion-indicator"><!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Incompleto</font></font></span>
+                        <!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1.0.2 Estrutura do curso</font></font></div>
+                      </div>
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+                            <div class="block__container " style="">
+                                <!--?lit$644827163$--><!---->
+                                    <block-view modelid="631b0626c3803267d02d5590" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="block" style="width: 100%;"><template shadowrootmode="open"><!---->
+                
+                <div data-socialgoodpulse-id="631b0626c3803267d02d5590" class="631b0626c3803267d02d5590 block background-color-white is-complete">
+                    <div class="block__inner">    
+                    <base-view type="block" modelid="631b0626c3803267d02d5590" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="block__header-wrapper background-color-white ">
+        <div class="block__header ">
+              <div class="block__header-inner ">
+                  
+                    <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+                        <div class="component__container">                            
+                                <!--?lit$644827163$--><!----><text-view modelid="631b0677c3803267d02d5591" class="is-left" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="component"><template shadowrootmode="open"><!---->
+        <div class="component__header-container">
+            <div data-socialgoodpulse-id="631b0677c3803267d02d5591" class="component text 631b0677c3803267d02d5591  is-left is-complete  ">
+                <base-view type="component" lowercase_component="text" model="[object Object]" customclass="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="component__header-wrapper  ">
+        <div class="component__header text__header">
+              <div class="component__header-inner text__header-inner">
+                  
+                    <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$--> <div class="component__content">
+                      <div tabindex="0" class="component__body text__body">
+                        <div class="component__body-inner text__body-inner"><!--?lit$644827163$--><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O curso é dividido em seis módulos:</font></font></p>
+
+<br>
+
+<ol>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Módulo 1</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Introdução ao JavaScript e Programação de Computadores;</font></font></li>
+
+<br>
+
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Módulo 2</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Variáveis, Tipos de Dados, Conversão de Tipo e Comentários;</font></font></li>
+
+<br>
+
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Módulo 3</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Operadores e interação com o usuário;</font></font></li>
+
+<br>
+
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Módulo 4</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Fluxo de Controle – Execução Condicional e Loops;</font></font></li>
+
+<br>
+
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Módulo 5</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Funções;</font></font></li>
+
+<br>
+
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Módulo 6</font></font></strong>
+<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Erros, exceções, depuração e solução de problemas.</font></font></li>
+
+</ol>
+<br>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O curso termina com um </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">teste final</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> composto por 30 questões, avaliando sua compreensão dos conceitos abordados.</font></font></p></div>
+                      </div>
+                    </div>
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+            </div>
+        </div>
+
+        <!-- div><div class="component__inner"></div></div -->
+        </template></text-view><!----><!----><graphic-view modelid="631b06b8c3803267d02d5592" class="is-right" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="component"><template shadowrootmode="open"><!---->
+        <div data-socialgoodpulse-id="631b06b8c3803267d02d5592" class="component graphic 631b06b8c3803267d02d5592  is-right is-complete  ">
+            <div class="component__header-container">
+                <base-view type="component" lowercase_component="graphic" model="[object Object]" customclass="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="component__header-wrapper  ">
+        <div class="component__header graphic__header">
+              <div class="component__header-inner graphic__header-inner">
+                  
+                    <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$--> <div class="component__content">
+                      <div tabindex="0" class="component__body graphic__body">
+                        <div class="component__body-inner graphic__body-inner"><!--?lit$644827163$--><a style="pointer-events:none"></a></div>
+                      </div>
+                    </div>
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+            </div>
+            <div class="component__widget">
+                <!--?lit$644827163$-->
+                    <div class="graphic__image-container  ">
+                        <img aria-hidden="false" tabindex="0" class="graphic__image js-graphic-set-image-src" src="https://www.netacad.com/content/jse1/1.0/courses/content/m1/en-US/assets/36f7bf59a2aed3b9681ac279f7b6da88c6b9dbb1.png" data-large="./courses/content/m1/en-US/assets/36f7bf59a2aed3b9681ac279f7b6da88c6b9dbb1.png" data-small="./courses/content/m1/en-US/assets/36f7bf59a2aed3b9681ac279f7b6da88c6b9dbb1.png" alt="">
+
+                        <!--?lit$644827163$-->
+
+                    </div>
+                
+            </div>
+        </div>
+        </template></graphic-view><!---->
+                            </div>                     
+                    </div>
+                </div>
+            </template></block-view>
+                                <!---->
+                            </div>
+                        </div>
+                        <!--?lit$644827163$-->
+                    </div>
+                </div>
+            </div>
+        </template></article-view>
+                            <!----><!---->
+                                <article-view modelid="631b00c4c3803267d02daa12" model="[object Object]" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="article"><template shadowrootmode="open"><!---->
+            <div class="article 631b00c4c3803267d02daa12 background-color-gray is-complete ">
+                <div class="article__inner">
+                <div class=" no-adaptive-scroll">
+                    <!--?lit$644827163$-->
+                        <div class=""> 
+                            <base-view type="article" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="article__header-wrapper background-color-gray ">
+        <div class="article__header ">
+              <div class="article__header-inner ">
+                  
+                    <!--?lit$644827163$--> <div class=" article__title ">
+                      <!--?lit$644827163$--><heading-view aria-hidden="true" id="631b00c4c3803267d02daa12-heading-view" headingtitle="1.0.3 Syllabus" modelid="631b00c4c3803267d02daa12" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="js-heading is-complete">
+        <div class="js-heading-inner" role="heading" id="article-heading" aria-level="1">
+        <span class="aria-label"> <!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Programa Incompleto </font></font>&nbsp;<!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1.0.3</font></font></span>
+        </div>
+      </div>
+    </template></heading-view>
+                        <div tabindex="0" role="heading" class="article__title-inner " aria-level="">
+                        <span class="accessibility-completion-indicator"><!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Incompleto</font></font></span>
+                        <!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1.0.3 Programa</font></font></div>
+                      </div>
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+                            <div class="block__container " style="">
+                                <!--?lit$644827163$--><!---->
+                                    <block-view modelid="631b00c5c3803267d02d54e9" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="block" style="width: 100%;"><template shadowrootmode="open"><!---->
+                
+                <div data-socialgoodpulse-id="631b00c5c3803267d02d54e9" class="631b00c5c3803267d02d54e9 block  is-complete">
+                    <div class="block__inner">    
+                    <base-view type="block" modelid="631b00c5c3803267d02d54e9" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="block__header-wrapper  ">
+        <div class="block__header ">
+              <div class="block__header-inner ">
+                  
+                    <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+                        <div class="component__container">                            
+                                <!--?lit$644827163$--><!----><raw-html modelid="631b00c5c3803267d02d5545" class="is-full" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="component"><template shadowrootmode="open"><!---->
+            <div class=" rawhtml__inner component__inner">
+                <div data-socialgoodpulse-id="631b00c5c3803267d02d5545" class="component rawhtml 631b00c5c3803267d02d5545  is-full is-complete  ">
+                    <div data-socialgoodpulse-id="631b00c5c3803267d02d5545" class="component 631b00c5c3803267d02d5545">
+                        <base-view type="component" lowercase_component="rawHtml" model="[object Object]" customclass="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="component__header-wrapper  ">
+        <div class="component__header rawHtml__header">
+              <div class="component__header-inner rawHtml__header-inner">
+                  
+                    <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+                    <div class="component-widge" tabindex="0">
+                    <!--?lit$644827163$-->
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Neste curso você aprenderá:</font></font></p>
+<h2 class="header-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Módulo 1</font></font></h2>
+<h2 class="header-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Introdução ao JavaScript e à Programação de Computadores</font></font></h2>
+<ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sobre JavaScript (como se comunicar com o computador, o que é JS, vantagens e limitações do JS, onde o JS é usado hoje)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Configurando o ambiente de programação (ferramentas de desenvolvimento, ambiente de desenvolvimento online, ambiente de desenvolvimento local)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Primeiro programa JS – Olá, Mundo! (algumas palavras sobre HTML, como executar seu código JavaScript, executando o código diretamente no console)</font></font></li></ul>
+
+<h2 class="header-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Módulo 2</font></font></h2>
+<h2 class="header-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Variáveis, Tipos de Dados, Conversão de Tipos e Comentários</font></font></h2>
+<ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Variáveis ​​(nomeação, declaração e inicialização de variáveis, declarações e modo estrito, alteração de valores de variáveis, constantes, escopo)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tipos de dados primitivos (Boolean, Number, BigInt, String, undefined, null, conversão de tipo – funções de construção primitivas e conversões primitivas, conversões implícitas)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tipos de dados complexos (Objeto, Array, propriedades e métodos básicos do Array)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Comentários (comentários de uma única linha, comentários de várias linhas, documentação)</font></font></li></ul>
+
+<h2 class="header-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Módulo 3</font></font></h2>
+<h2 class="header-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Operadores e interação do usuário</font></font></h2>
+<ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Operadores de atribuição, aritméticos e lógicos (o que são operadores, operadores de atribuição, operadores aritméticos, operadores lógicos, operadores de atribuição compostos)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Strings, comparação e outros operadores JS (concatenação de strings e atribuições compostas, operadores de comparação, operadores condicionais, operadores typeof, instanceof e delete, precedência de operadores)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Interagindo com o usuário (caixas de diálogo – alerta, confirmação, prompt)</font></font></li></ul>
+
+<h2 class="header-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Módulo 4</font></font></h2>
+<h2 class="header-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fluxo de Controle – Execução Condicional e Loops</font></font></h2>
+<ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Execução condicional (o que é execução condicional, a instrução if–else, o operador condicional, a instrução switch–case)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Loops (o que são loops, o loop while, o loop do–while, o loop for, o loop for–of, o loop for–in, as instruções break e continue)</font></font></li>
+</ul>
+
+<h2 class="header-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Módulo 5</font></font></h2><h2>
+</h2><h2 class="header-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Funções</font></font></h2>
+<ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Noções básicas de funções (o que são funções, declaração de funções, chamada de funções, variáveis ​​locais, a instrução return, parâmetros de função, sombreamento)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Funções como membros de primeira classe (expressões de função, passagem de uma função como parâmetro, retornos de chamada)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Funções de seta (declaração e chamada)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Recursão (ideia básica)</font></font></li></ul>
+
+<h2 class="header-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Módulo 6</font></font></h2>
+<h2 class="header-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Erros, exceções, depuração e solução de problemas</font></font></h2>
+<ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Erros e exceções – introdução (linguagens naturais e erros de comunicação, erros vs. exceções, erros sem exceções, confiança limitada)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tipos básicos de erros em JS (SyntaxError, ReferenceError, TypeError, RangeError)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tratamento de exceções (a instrução try–catch, a instrução finally, a instrução throw e erros personalizados)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Depuração e solução de problemas de código (o que é depuração, execução passo a passo, visualização e modificação de variáveis, opção de saída, medição do tempo de execução do código)</font></font></li></ul>
+
+
+                    </div>
+                    </div>
+                </div> 
+            </div></template></raw-html><!---->
+                            </div>                     
+                    </div>
+                </div>
+            </template></block-view>
+                                <!---->
+                            </div>
+                        </div>
+                        <!--?lit$644827163$-->
+                    </div>
+                </div>
+            </div>
+        </template></article-view>
+                            <!----><!---->
+                                <article-view modelid="631b00c4c3803267d02d12bb" model="[object Object]" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="article"><template shadowrootmode="open"><!---->
+            <div class="article 631b00c4c3803267d02d12bb background-color-white is-complete ">
+                <div class="article__inner">
+                <div class=" no-adaptive-scroll">
+                    <!--?lit$644827163$-->
+                        <div class=""> 
+                            <base-view type="article" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="article__header-wrapper background-color-white ">
+        <div class="article__header ">
+              <div class="article__header-inner ">
+                  
+                    <!--?lit$644827163$--> <div class=" article__title ">
+                      <!--?lit$644827163$--><heading-view aria-hidden="true" id="631b00c4c3803267d02d12bb-heading-view" headingtitle="1.0.4 Objectives" modelid="631b00c4c3803267d02d12bb" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="js-heading is-complete">
+        <div class="js-heading-inner" role="heading" id="article-heading" aria-level="1">
+        <span class="aria-label"> <!--?lit$644827163$--><font style="vertical-align: inherit;"></font>&nbsp;<!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Objetivos 1.0.4 </font><font style="vertical-align: inherit;">incompletos</font></font></span>
+        </div>
+      </div>
+    </template></heading-view>
+                        <div tabindex="0" role="heading" class="article__title-inner " aria-level="">
+                        <span class="accessibility-completion-indicator"><!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Incompleto</font></font></span>
+                        <!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1.0.4 Objetivos</font></font></div>
+                      </div>
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+                            <div class="block__container " style="">
+                                <!--?lit$644827163$--><!---->
+                                    <block-view modelid="631b0af0c3803267d02d5596" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="block" style="width: 100%;"><template shadowrootmode="open"><!---->
+                
+                <div data-socialgoodpulse-id="631b0af0c3803267d02d5596" class="631b0af0c3803267d02d5596 block background-color-white is-complete">
+                    <div class="block__inner">    
+                    <base-view type="block" modelid="631b0af0c3803267d02d5596" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="block__header-wrapper background-color-white ">
+        <div class="block__header ">
+              <div class="block__header-inner ">
+                  
+                    <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+                        <div class="component__container">                            
+                                <!--?lit$644827163$--><!----><raw-html modelid="631b0b0cc3803267d02d5597" class="is-full" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="component"><template shadowrootmode="open"><!---->
+            <div class=" rawhtml__inner component__inner">
+                <div data-socialgoodpulse-id="631b0b0cc3803267d02d5597" class="component rawhtml 631b0b0cc3803267d02d5597  is-full is-complete  ">
+                    <div data-socialgoodpulse-id="631b0b0cc3803267d02d5597" class="component 631b0b0cc3803267d02d5597">
+                        <base-view type="component" lowercase_component="rawHtml" model="[object Object]" customclass="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="component__header-wrapper  ">
+        <div class="component__header rawHtml__header">
+              <div class="component__header-inner rawHtml__header-inner">
+                  
+                    <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+                    <div class="component-widge" tabindex="0">
+                    <!--?lit$644827163$--><h2 class="header-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Módulo 1</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Após concluir o Módulo 1, você irá:</font></font></p><ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">entender os conceitos fundamentais de programação, tais como: interpretação e o interpretador, compilação e o compilador, programação do lado do cliente vs. do lado do servidor;</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ter conhecimento básico de como configurar e usar o ambiente de programação básico (online ou local)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">adquira habilidades que lhe permitam executar seu primeiro programa JavaScript no lado do cliente (tanto como um elemento incorporado na página HTML quanto diretamente no console do navegador).</font></font></li></ul>
+
+<h2 class="header-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Módulo 2</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Após concluir o Módulo 2, você irá:</font></font></p><ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ter conhecimento e habilidades para trabalhar com variáveis ​​(ou seja, nomear, declarar, inicializar e modificar seus valores)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">entender conceitos como escopo, blocos de código, sombreamento e elevação;</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">conhecer as propriedades básicas de tipos de dados primitivos, como booleano, número, bigint, indefinido, nulo, e ser capaz de utilizá-los;</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">esteja familiarizado com as propriedades básicas do tipo de dados primitivo string, incluindo literais de string – aspas simples ou duplas, caractere de escape, interpolação de string, propriedades e métodos básicos;</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">conhecer as propriedades básicas de tipos de dados complexos, como Array e Object (tratados como um registro) e ser capaz de usá-los na prática.</font></font></li></ul>
+
+<h2 class="header-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Módulo 3</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Após concluir o Módulo 3, você irá:</font></font></p><ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">saber o que são operadores e como classificá-los (por tipo de operando, por número de operandos, etc.)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ser capaz de usar operadores de atribuição, aritméticos, lógicos e de comparação na prática;</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">entender a operação do operador condicional e os operadores typeof, instanceof e delete;</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">entender o que são a precedência e a associatividade dos operadores básicos e ser capaz de influenciá-los por meio do agrupamento entre colchetes;</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ser capaz de realizar comunicação bidirecional básica com o usuário do programa usando as caixas de diálogo de alerta, confirmação e prompt.</font></font></li></ul>
+
+<h2 class="header-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Módulo 4</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Após concluir o Módulo 4, você irá:</font></font></p><ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ser capaz de forçar a execução condicional de um grupo de instruções (tomar decisões e ramificar o fluxo) usando comandos if-else e switch;</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ser capaz de forçar um grupo de instruções a se repetir em um loop usando os comandos for, while e do-while, usando condições dependentes e independentes no número de iterações;</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">entender e ser capaz de usar instruções break e continue específicas do loop;</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ser capaz de usar a instrução for-in para iterar sobre as propriedades de um objeto;</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ser capaz de usar a instrução for-of para percorrer os elementos de uma matriz.</font></font></li></ul>
+
+<h2 class="header-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Módulo 5</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Após concluir o Módulo 5, você irá:</font></font></p><ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ser capaz de declarar e chamar funções;</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">saber como passar argumentos de chamada para uma função e retornar o resultado de sua operação a partir dela;</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">entender o conceito de variável local e o efeito de sombrear variáveis ​​com os mesmos nomes dentro de uma função;</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">saber que uma função em JS é um membro de primeira classe e ser capaz de tirar vantagem disso declarando funções usando expressões de função e passando funções como argumentos para chamadas de outras funções;</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">entender o conceito de recursão no contexto de funções e ser capaz de resolver problemas simples de programação utilizando-o;</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ter um conhecimento básico da função de retorno de chamada e ser capaz de usá-la de forma assíncrona em conjunto com os métodos setTimeout e setInterval;</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ter uma compreensão clara da notação de função de seta e ser capaz de escrever funções alternativas como declarações regulares, expressões de função e funções de seta.</font></font></li></ul>
+
+<h2 class="header-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Módulo 6</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Após concluir o Módulo 6, você irá:</font></font></p><ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">obter uma compreensão das diferenças entre erros sintáticos, semânticos e lógicos;</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">entender o conceito de exceção e distinguir entre as exceções básicas geradas pelo JS quando ocorre um erro: SyntaxError, ReferenceError, TypeError, RangeError;</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ter a capacidade de lidar com exceções usando a instrução try-catch-final;</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ser capaz de gerar suas próprias exceções usando a instrução throw;</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tenha habilidades para usar o depurador para análise básica do seu próprio código, incluindo: execução passo a passo, visualização e modificação de variáveis, medição do tempo de execução do código.</font></font></li></ul>
+                    </div>
+                    </div>
+                </div> 
+            </div></template></raw-html><!---->
+                            </div>                     
+                    </div>
+                </div>
+            </template></block-view>
+                                <!---->
+                            </div>
+                        </div>
+                        <!--?lit$644827163$-->
+                    </div>
+                </div>
+            </div>
+        </template></article-view>
+                            <!----><!---->
+                                <article-view modelid="631b00c4c3803267d02d11aa" model="[object Object]" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="article"><template shadowrootmode="open"><!---->
+            <div class="article 631b00c4c3803267d02d11aa background-color-gray is-complete ">
+                <div class="article__inner">
+                <div class=" no-adaptive-scroll">
+                    <!--?lit$644827163$-->
+                        <div class=""> 
+                            <base-view type="article" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="article__header-wrapper background-color-gray ">
+        <div class="article__header ">
+              <div class="article__header-inner ">
+                  
+                    <!--?lit$644827163$--> <div class=" article__title ">
+                      <!--?lit$644827163$--><heading-view aria-hidden="true" id="631b00c4c3803267d02d11aa-heading-view" headingtitle="1.0.5 Graduate Profile" modelid="631b00c4c3803267d02d11aa" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="js-heading is-complete">
+        <div class="js-heading-inner" role="heading" id="article-heading" aria-level="1">
+        <span class="aria-label"> <!--?lit$644827163$--><font style="vertical-align: inherit;"></font>&nbsp;<!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Perfil de Graduado </font><font style="vertical-align: inherit;">Incompleto 1.0.5</font></font></span>
+        </div>
+      </div>
+    </template></heading-view>
+                        <div tabindex="0" role="heading" class="article__title-inner " aria-level="">
+                        <span class="accessibility-completion-indicator"><!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Incompleto</font></font></span>
+                        <!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1.0.5 Perfil do Graduado</font></font></div>
+                      </div>
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+                            <div class="block__container " style="">
+                                <!--?lit$644827163$--><!---->
+                                    <block-view modelid="631b0b58c3803267d02d5598" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="block" style="width: 100%;"><template shadowrootmode="open"><!---->
+                
+                <div data-socialgoodpulse-id="631b0b58c3803267d02d5598" class="631b0b58c3803267d02d5598 block  is-complete">
+                    <div class="block__inner">    
+                    <base-view type="block" modelid="631b0b58c3803267d02d5598" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="block__header-wrapper  ">
+        <div class="block__header ">
+              <div class="block__header-inner ">
+                  
+                    <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+                        <div class="component__container">                            
+                                <!--?lit$644827163$--><!----><raw-html modelid="631b0b7bc3803267d02d5599" class="is-full" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="component"><template shadowrootmode="open"><!---->
+            <div class=" rawhtml__inner component__inner">
+                <div data-socialgoodpulse-id="631b0b7bc3803267d02d5599" class="component rawhtml 631b0b7bc3803267d02d5599  is-full is-complete  ">
+                    <div data-socialgoodpulse-id="631b0b7bc3803267d02d5599" class="component 631b0b7bc3803267d02d5599">
+                        <base-view type="component" lowercase_component="rawHtml" model="[object Object]" customclass="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="component__header-wrapper  ">
+        <div class="component__header rawHtml__header">
+              <div class="component__header-inner rawHtml__header-inner">
+                  
+                    <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+                    <div class="component-widge" tabindex="0">
+                    <!--?lit$644827163$--><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Depois de concluir o curso, você irá:</font></font></p>
+<ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">conhecer a sintaxe da linguagem JavaScript básica a um nível que permitirá trabalhar com variáveis, operadores, controle de fluxo e funções;</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">conhecer os fundamentos do sistema de tipos de dados JavaScript, distinguindo entre tipos primitivos e complexos, e ser capaz de escolher um tipo adequado às suas necessidades;</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">pensar algoritmicamente e ser capaz de analisar um problema usando um aparato conceitual programático;</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ser capaz de escolher um tipo de dado adequado ao problema a ser resolvido e utilizar meios de controle de fluxo adequados;</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ser capaz de projetar, desenvolver e melhorar programas JavaScript muito simples;</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ser capaz de interpretar e tratar exceções básicas relacionadas a erros na execução do programa;</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">entender o trabalho do programador no processo de desenvolvimento de software e o papel das ferramentas fundamentais de desenvolvimento;</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">saber como um programa é interpretado e executado em um ambiente computacional real, local ou remoto;</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tenha as habilidades e o conhecimento necessários para começar a criar e desenvolver seu próprio portfólio de programação.</font></font></li></ul>
+                    </div>
+                    </div>
+                </div> 
+            </div></template></raw-html><!---->
+                            </div>                     
+                    </div>
+                </div>
+            </template></block-view>
+                                <!---->
+                            </div>
+                        </div>
+                        <!--?lit$644827163$-->
+                    </div>
+                </div>
+            </div>
+        </template></article-view>
+                            <!----><!---->
+                                <article-view modelid="631b00c4c3803267d02daa11" model="[object Object]" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="article"><template shadowrootmode="open"><!---->
+            <div class="article 631b00c4c3803267d02daa11 background-color-white is-complete ">
+                <div class="article__inner">
+                <div class=" no-adaptive-scroll">
+                    <!--?lit$644827163$-->
+                        <div class=""> 
+                            <base-view type="article" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="article__header-wrapper background-color-white ">
+        <div class="article__header ">
+              <div class="article__header-inner ">
+                  
+                    <!--?lit$644827163$--> <div class=" article__title ">
+                      <!--?lit$644827163$--><heading-view aria-hidden="true" id="631b00c4c3803267d02daa11-heading-view" headingtitle="1.0.6 Prepare for the JSE-40-0x exam" modelid="631b00c4c3803267d02daa11" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="js-heading is-complete">
+        <div class="js-heading-inner" role="heading" id="article-heading" aria-level="1">
+        <span class="aria-label"> <!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Incompleto </font></font>&nbsp;<!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1.0.6 Prepare-se para o exame JSE-40-0x</font></font></span>
+        </div>
+      </div>
+    </template></heading-view>
+                        <div tabindex="0" role="heading" class="article__title-inner " aria-level="">
+                        <span class="accessibility-completion-indicator"><!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Incompleto</font></font></span>
+                        <!--?lit$644827163$--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1.0.6 Prepare-se para o exame JSE-40-0x</font></font></div>
+                      </div>
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+                            <div class="block__container " style="">
+                                <!--?lit$644827163$--><!---->
+                                    <block-view modelid="631b00c5c3803267d02d54ea" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="block" style="width: 33.3333%;"><template shadowrootmode="open"><!---->
+                
+                <div data-socialgoodpulse-id="631b00c5c3803267d02d54ea" class="631b00c5c3803267d02d54ea block remove-padding-bottom is-complete">
+                    <div class="block__inner">    
+                    <base-view type="block" modelid="631b00c5c3803267d02d54ea" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="block__header-wrapper remove-padding-bottom ">
+        <div class="block__header ">
+              <div class="block__header-inner ">
+                  
+                    <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+                        <div class="component__container">                            
+                                <!--?lit$644827163$--><!----><raw-html modelid="631b00c5c3803267d02d5546" class="is-full" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="component"><template shadowrootmode="open"><!---->
+            <div class=" rawhtml__inner component__inner">
+                <div data-socialgoodpulse-id="631b00c5c3803267d02d5546" class="component rawhtml 631b00c5c3803267d02d5546  is-full is-complete  ">
+                    <div data-socialgoodpulse-id="631b00c5c3803267d02d5546" class="component 631b00c5c3803267d02d5546">
+                        <base-view type="component" lowercase_component="rawHtml" model="[object Object]" customclass="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="component__header-wrapper  ">
+        <div class="component__header rawHtml__header">
+              <div class="component__header-inner rawHtml__header-inner">
+                  
+                    <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+                    <div class="component-widge" tabindex="0">
+                    <!--?lit$644827163$--><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mergulhe na programação, aprenda JavaScript do zero e prepare-se para a </font><font style="vertical-align: inherit;">certificação </font></font><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">JSE – Certified Entry-Level JavaScript Programmer</font></font></i><font style="vertical-align: inherit;"></font></h2>
+
+<p><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O JavaScript Essentials 1</font></font></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> está diretamente alinhado com a certificação </font></font><a href="https://js.institute/jse-certification" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">JSE – Certified Entry-Level JavaScript Programmer</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , uma credencial profissional que demonstra a compreensão do candidato sobre a sintaxe e a semântica básicas da linguagem JavaScript, bem como sua proficiência no uso dos elementos mais essenciais da linguagem, ferramentas e recursos para projetar, desenvolver e refatorar programas JavaScript simples.</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O detentor da certificação conhece a sintaxe da linguagem JavaScript básica a um nível que lhe permite trabalhar com variáveis, operadores, mecanismos de fluxo de controle e funções, além de entender os fundamentos do sistema de tipos de dados JavaScript, tratamento de exceções, solução de problemas, depuração e ambiente de tempo de execução.</font></font></p>
+                    </div>
+                    </div>
+                </div> 
+            </div></template></raw-html><!---->
+                            </div>                     
+                    </div>
+                </div>
+            </template></block-view>
+                                <!----><!---->
+                                    <block-view modelid="631b00c5c3803267d02d54eb" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="block" style="width: 33.3333%;"><template shadowrootmode="open"><!---->
+                
+                <div data-socialgoodpulse-id="631b00c5c3803267d02d54eb" class="631b00c5c3803267d02d54eb block remove-padding-top remove-padding-bottom is-complete">
+                    <div class="block__inner">    
+                    <base-view type="block" modelid="631b00c5c3803267d02d54eb" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="block__header-wrapper remove-padding-top remove-padding-bottom ">
+        <div class="block__header ">
+              <div class="block__header-inner ">
+                  
+                    <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+                        <div class="component__container">                            
+                                <!--?lit$644827163$--><!----><graphic-view modelid="631b00c5c3803267d02d5547" class="is-full" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="component"><template shadowrootmode="open"><!---->
+        <div data-socialgoodpulse-id="631b00c5c3803267d02d5547" class="component graphic 631b00c5c3803267d02d5547  is-full is-complete  ">
+            <div class="component__header-container">
+                <base-view type="component" lowercase_component="graphic" model="[object Object]" customclass="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="component__header-wrapper  ">
+        <div class="component__header graphic__header">
+              <div class="component__header-inner graphic__header-inner">
+                  
+                    <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+            </div>
+            <div class="component__widget">
+                <!--?lit$644827163$-->
+                    <div class="graphic__image-container  ">
+                        <img aria-hidden="false" tabindex="0" class="graphic__image js-graphic-set-image-src" src="https://www.netacad.com/content/jse1/1.0/courses/content/m1/en-US/assets/4314251b788389424134b07f0cbe251c44cdbd8e.png" data-large="./courses/content/m1/en-US/assets/4314251b788389424134b07f0cbe251c44cdbd8e.png" data-small="./courses/content/m1/en-US/assets/4314251b788389424134b07f0cbe251c44cdbd8e.png" alt="">
+
+                        <!--?lit$644827163$-->
+
+                    </div>
+                
+            </div>
+        </div>
+        </template></graphic-view><!---->
+                            </div>                     
+                    </div>
+                </div>
+            </template></block-view>
+                                <!----><!---->
+                                    <block-view modelid="631b00c5c3803267d02d54ec" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="block" style="width: 33.3333%;"><template shadowrootmode="open"><!---->
+                
+                <div data-socialgoodpulse-id="631b00c5c3803267d02d54ec" class="631b00c5c3803267d02d54ec block background-color-white remove-padding-top is-complete">
+                    <div class="block__inner">    
+                    <base-view type="block" modelid="631b00c5c3803267d02d54ec" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="block__header-wrapper background-color-white remove-padding-top ">
+        <div class="block__header ">
+              <div class="block__header-inner ">
+                  
+                    <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+                        <div class="component__container">                            
+                                <!--?lit$644827163$--><!----><raw-html modelid="631b00c5c3803267d02d5548" class="is-full" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="component"><template shadowrootmode="open"><!---->
+            <div class=" rawhtml__inner component__inner">
+                <div data-socialgoodpulse-id="631b00c5c3803267d02d5548" class="component rawhtml 631b00c5c3803267d02d5548  is-full is-complete  ">
+                    <div data-socialgoodpulse-id="631b00c5c3803267d02d5548" class="component 631b00c5c3803267d02d5548">
+                        <base-view type="component" lowercase_component="rawHtml" model="[object Object]" customclass="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="component__header-wrapper  ">
+        <div class="component__header rawHtml__header">
+              <div class="component__header-inner rawHtml__header-inner">
+                  
+                    <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+                    <div class="component-widge" tabindex="0">
+                    <!--?lit$644827163$--><p><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A certificação JSE – Certified Entry-Level JavaScript Programmer</font></font></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> é uma etapa intermediária para a certificação </font></font><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">JSA – Certified Associate in JavaScript Programming</font></font></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> e o ponto de partida para iniciar uma carreira em desenvolvimento de software, programação JavaScript e tecnologias relacionadas.</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Obter a certificação JSE ajudará você </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a se destacar</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> dos outros candidatos e </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a abrir caminho</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> . Depois de concluir este curso, você terá direito a um </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">desconto de 20% no exame de certificação</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> !</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Para mais informações sobre a certificação </font></font><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">JSE – Certified Entry-Level JavaScript Programmer</font></font></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , visite </font></font><a href="http://javascriptinstitute.com/jse-certification" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">www.js.institute</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> .</font></font></p>
+
+<h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Então, você está pronto para começar sua jornada JavaScript? Clique em </font></font><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Next</font></font></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> para prosseguir para a Seção 1 e começar a aprender. Vejo você lá!</font></font></h2>
+
+<br><br>
+                    </div>
+                    </div>
+                </div> 
+            </div></template></raw-html><!---->
+                            </div>                     
+                    </div>
+                </div>
+            </template></block-view>
+                                <!---->
+                            </div>
+                        </div>
+                        <!--?lit$644827163$-->
+                    </div>
+                </div>
+            </div>
+        </template></article-view>
+                            <!----><!---->
+                                <article-view modelid="631b00c4c3803267d02d549a" model="[object Object]" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="article"><template shadowrootmode="open"><!---->
+            <div class="article 631b00c4c3803267d02d549a quick_nav remove-padding-top remove-padding-bottom is-complete ">
+                <div class="article__inner">
+                <div class=" no-adaptive-scroll">
+                    <!--?lit$644827163$-->
+                        <div class=""> 
+                            <base-view type="article" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="article__header-wrapper quick_nav remove-padding-top remove-padding-bottom ">
+        <div class="article__header ">
+              <div class="article__header-inner ">
+                  
+                    <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+                            <div class="block__container " style="">
+                                <!--?lit$644827163$--><!---->
+                                    <block-view modelid="631b00c5c3803267d02d54ee" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="block" style="width: 100%;"><template shadowrootmode="open"><!---->
+                
+                <div data-socialgoodpulse-id="631b00c5c3803267d02d54ee" class="631b00c5c3803267d02d54ee block  is-complete">
+                    <div class="block__inner">    
+                    <base-view type="block" modelid="631b00c5c3803267d02d54ee" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!---->
+      <div class="block__header-wrapper  ">
+        <div class="block__header ">
+              <div class="block__header-inner ">
+                  
+                    <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+                  <!--?lit$644827163$-->
+              </div>
+          </div>
+        </div>
+      
+    </template></base-view>
+                        <div class="component__container">                            
+                                <!--?lit$644827163$--><!----><quicknav-view modelid="631b00c5c3803267d02d554b" class="is-full" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme" sgpulse-type="component"><template shadowrootmode="open"><!----><!--?--></template></quicknav-view><!---->
+                            </div>                     
+                    </div>
+                </div>
+            </template></block-view>
+                                <!---->
+                            </div>
+                        </div>
+                        <!--?lit$644827163$-->
+                    </div>
+                </div>
+            </div>
+        </template></article-view>
+                            <!---->
+                    </div>
+                </div>
+            </div>
+    </template></page-view>
+        </div>
+      
+      <notify-view is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!----><!--?--></template></notify-view>
+      <sgpulse-drawer is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="light" orientation="landscape" themetype="article-base-theme"><template shadowrootmode="open"><!----><!--?--></template></sgpulse-drawer>
+    </template></app-root></body></html>
